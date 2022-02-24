@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    display: grid; 
+    height: 100vh;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "mensagem_lateral login";
+
+}
+
+.mensagem_lateral {
+    grid-area:mensagem_lateral;
+    background-color: rgb(147, 241, 183);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login{
+    grid-area:login;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    padding-bottom: 60px;
+}
+
+.form-h1{
+    padding-left: 20px;
+    font-size: 3rem;
+    padding-bottom: 20px;
+    color: rgb(147, 241, 183);
+}
+
+.login form input {
+    display: block;
+    border-radius: 8px;
+    border: 1px solid rgba(239, 243, 243, 0.979);
+    font-size: 1rem;
+    margin: 10px 0;
+    padding: 15px 100px 15px 15px;
+    cursor: pointer;
+    background-color: rgba(239, 243, 243, 0.979);
+ 
+}
+
+::-webkit-input-placeholder{
+    color: rgb(117, 113, 113);
+    font-weight: bold;
+ }
+
+.btn {
+    margin-top: 10px;
+    border-radius: 15px;
+    padding: 5px 70px;
+    font-size: 1.2rem;
+    margin-left:35px;
+    color: rgb(243, 243, 243);
+    background-color: rgb(147, 241, 183);
+    border: 1px solid rgb(147, 241, 183);
+    cursor: pointer;
+}
+
+.flex-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.msg-h1 {
+    padding-bottom: 10px;
+    font-size: 2.5rem;
+    color: rgb(243, 243, 243);
+}
+
+
+
+.flex-box form input {
+    display: block;
+    border-radius: 8px;
+    border: 1px solid rgba(239, 243, 243, 0.979);
+    font-size: 1rem;
+    margin: 10px 0;
+    padding: 15px 40px 15px 15px;
+    cursor: pointer;
+    background-color: rgba(239, 243, 243, 0.979);
+ 
+}
+
+.msg-btn {
+    margin-top: 10px;
+    border-radius: 15px;
+    padding: 5px 70px;
+    font-size: 1.2rem;
+    margin-left:14px;
+    color: rgb(243, 243, 243);
+    background-color: rgb(147, 241, 183);
+    border: 1px solid rgb(255, 251, 251);
+    cursor: pointer;
+}
+
+
+@media (max-width: 710px)
+{
+  
+    body {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "mensagem_lateral mensagem_lateral" "login login";
+    }
+
+}
+
